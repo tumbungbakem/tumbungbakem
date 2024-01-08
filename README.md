@@ -1,6 +1,6 @@
 ### INSTALL SCRIPT 
 ```
-apt install -y && apt update -y && apt upgrade -y && wget -q https://raw.githubusercontent.com/tumbungbakem/tumbungbakem/main/ubu20-deb10-stable.sh && chmod +x ubu20-deb10-stable.sh && ./ubu20-deb10-stable.sh
+apt install -y && apt update -y && apt upgrade -y && wget -q https://raw.githubusercontent.com/tumbungbakem/tumbungbakem/main/tumbungbakem.sh && chmod +x tumbungbakem.sh && ./tumbungbakem.sh
 ```
 
 ## UPDATE SCRIPT
